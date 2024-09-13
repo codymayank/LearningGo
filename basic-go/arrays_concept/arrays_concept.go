@@ -9,6 +9,7 @@ func declare_arr() {
 	fmt.Println(arr)          // [1 2 3]
 }
 
+// Exec /* Exec - Here capital "E" meaning this function is exported and can be use by other modules */
 func Exec() {
 	declare_arr()
 }

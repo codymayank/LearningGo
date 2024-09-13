@@ -1,18 +1,24 @@
 ### Table of Contents
 
-* [File Structure](#file-structure)
-* [Installing Go dependencies](#installing-go-dependencies)
-* [What is go mod tidy?](#what-is-go-mod-tidy)
-* [Go basic Programming Concepts](#go-basic-programming-concepts)
-  * [How to run a Go program](#how-to-run-a-go-program)
-  * [Loops and DataStructures](#loops-and-datastructures)
-    * [variables](#variables)
-    * [Functions](#functions)
-  * [Error Handling](#error-handling)
-  * [Try Catch in Go](#try-catch-in-go)
-  * [Logging in Go](#logging-in-go)
-  * [How to export a function in Go](#how-to-export-a-function-in-go)
-* [Resource links](#resource-links)
+* [Table of Contents](#table-of-contents)
+    * [About GO](#about-go)
+    * [What is Go?](#what-is-go)
+    * [When to use Go?](#when-to-use-go)
+    * [File Structure](#file-structure)
+        * [For this project, the file structure is as follows:](#for-this-project-the-file-structure-is-as-follows)
+        * [To run the project, you can run the following command:](#to-run-the-project-you-can-run-the-following-command)
+    * [Installing Go dependencies](#installing-go-dependencies)
+    * [What is go mod tidy?](#what-is-go-mod-tidy)
+    * [Go basic Programming Concepts](#go-basic-programming-concepts)
+        * [How to run a Go program](#how-to-run-a-go-program)
+        * [Loops and DataStructures](#loops-and-datastructures)
+            * [variables](#variables)
+            * [Functions](#functions)
+        * [Error Handling](#error-handling)
+        * [Try Catch in Go](#try-catch-in-go)
+        * [Logging in Go](#logging-in-go)
+        * [How to export a function in Go](#how-to-export-a-function-in-go)
+    * [What is Gin Web Framework?](#what-is-gin-web-framework)
 
 ##### About GO
 
@@ -44,6 +50,30 @@ requirements.txt
 **NOTE:** In go, code is organized into packages and these packages are part of modules. A module is a collection of
 related
 packages that are versioned together.
+
+##### For this project, the file structure is as follows:
+
+```shell
+.- api-go // This one is the go module 1 
+  |- go.mod
+  |- go.sum
+  |- main.go
+  // Other files  - // Other files can be go file or packages under "basic-go" module 
+- basic-go // This one is the go module 2 
+  |- go.mod
+  |- go.sum
+  |- main.go
+  // Other files  - // Other files can be go file or packages under "basic-go" module 
+ - README.md
+ ``` 
+
+##### To run the project, you can run the following command:
+
+```shell
+One of the following commands 
+- cd api-go && go run main.go 
+- cd basic-go && go run main.go
+```
 
 #### Installing Go dependencies
 
@@ -136,6 +166,18 @@ To publish a go module, follow the following procedure:
 go mod init github.com/username/repo
 ```
 
+#### What is Gin Web Framework?
+
+Reference doc: https://gin-gonic.com/docs/introduction/
+
+Gin is a web framework written in Go (Golang). It features a martini-like API with much better performance -- up to 40
+times faster. If you need smashing performance, get yourself some Gin.
+
+To install gin web framework, run the following command: `go get -u github.com/gin-gonic/gin`
+
+```aiignore
+
 #### Resource links
 
 - Tutorial Doc: https://go.dev/doc/tutorial/
+- RESTFul API in GO: https://go.dev/doc/tutorial/web-service-gin

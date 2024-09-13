@@ -17,6 +17,7 @@ func range_loop() {
 	}
 }
 
+// Exec /* Exec - Here capital "E" meaning this function is exported and can be use by other modules */
 func Exec() {
 	simple_loop()
 	range_loop()

@@ -14,6 +14,7 @@ func Hello(name string) (string, error) {
 		return "", errors.New("empy name")
 	}
 	message := fmt.Sprintf("Hi, %s. Dude!", name)
+	// Even if "s" small it can be access from same package
 	sendHello(name)
 	// If no error, return nil
 	return message, nil
