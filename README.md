@@ -168,6 +168,8 @@ go mod init github.com/username/repo
 
 #### What is Gin Web Framework?
 
+![Image](https://deadline.com/wp-content/uploads/2023/11/sonic-the-hedgehog.jpg)
+
 Reference doc: https://gin-gonic.com/docs/introduction/
 
 Gin is a web framework written in Go (Golang). It features a martini-like API with much better performance -- up to 40
