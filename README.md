@@ -170,7 +170,9 @@ go mod init github.com/username/repo
 
 ![Image](https://deadline.com/wp-content/uploads/2023/11/sonic-the-hedgehog.jpg)
 
-Reference doc: https://gin-gonic.com/docs/introduction/
+#### Reference doc: https://gin-gonic.com/docs/introduction/
+
+For code reference, check the `main.go` file in the `api-go` folder
 
 Gin is a web framework written in Go (Golang). It features a martini-like API with much better performance -- up to 40
 times faster. If you need smashing performance, get yourself some Gin.
